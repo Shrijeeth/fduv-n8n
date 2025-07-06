@@ -10,17 +10,21 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
 
-      # Supabase DB credentials — set values in the Render dashboard
+      # Supabase DB credentials — dummy placeholders (set real values in Render dashboard)
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_DATABASE
+        value: your_db_name
       - key: DB_POSTGRESDB_HOST
+        value: your_host.supabase.co
       - key: DB_POSTGRESDB_USER
+        value: your_db_user
       - key: DB_POSTGRESDB_PASSWORD
+        value: your_db_password
       - key: DB_POSTGRESDB_PORT
         value: "5432"
 
-      # Community nodes — auto-installed on each startup
+      # Enable and auto-install community nodes
       - key: N8N_COMMUNITY_PACKAGES_ENABLED
         value: "true"
       - key: N8N_CUSTOM_EXTENSIONS
